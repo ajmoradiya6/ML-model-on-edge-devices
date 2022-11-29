@@ -19,12 +19,11 @@
 - [MobileNetV2](https://arxiv.org/abs/1801.04381)
 
 ## :star: Features
-Our face mask detector doesn't use any morphed masked images dataset and the model is accurate. Owing to the use of MobileNetV2 architecture, it is computationally efficient, thus making it easier to deploy the model to embedded systems (Raspberry Pi, Google Coral, etc.).
+Our face mask detector doesn't use any morphed masked images dataset and the model is accurate. Owing to the use of MobileNetV2 architecture, it is computationally efficient, thus making it easier to deploy the model to edge devices.
 
 This system can therefore be used in real-time applications which require face-mask detection for safety purposes due to the outbreak of Covid-19. This project can be integrated with embedded systems for application in airports, railway stations, offices, schools, and public places to ensure that public safety guidelines are followed.
 
 ## :file_folder: Dataset
-The dataset used can be downloaded here - [Click to Download](https://github.com/chandrikadeb7/Face-Mask-Detection/tree/master/dataset)
 
 This dataset consists of __4095 images__ belonging to two classes:
 *	__with_mask: 2165 images__
@@ -32,13 +31,10 @@ This dataset consists of __4095 images__ belonging to two classes:
 
 The images used were real images of faces wearing masks. The images were collected from the following sources:
 
-* __Bing Search API__ ([See Python script](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/search.py))
-* __Kaggle datasets__ 
-* __RMFD dataset__ ([See here](https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset))
 
 ## :key: Prerequisites
 
-All the dependencies and required libraries are included in the file <code>requirements.txt</code> [See here](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/requirements.txt)
+All the dependencies and required libraries are included in the file requirements.txt
 
 ## 🚀&nbsp; Installation
 1. Clone the repo
