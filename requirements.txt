@@ -1,6 +1,6 @@
 tensorflow==2.9.0
 keras
-imutils
+imutils.paths.list_images
 numpy
 opencv-python
 matplotlib

@@ -23,6 +23,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import argparse
 import os
+import glob
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
@@ -45,8 +46,17 @@ BS = 32
 # the list of data (i.e., images) and class images
 print("[INFO] loading images...")
 imagePaths = list(paths.list_images(args["dataset"]))
+
 data = []
 labels = []
+
+
+###########################
+
+
+
+
+
 
 # loop over the image paths
 for imagePath in imagePaths:
