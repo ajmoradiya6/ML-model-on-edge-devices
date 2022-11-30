@@ -12,7 +12,7 @@ RUN pip install streamlit
 RUN pip install onnx
 RUN pip install tf2onnx==1.13.0
 RUN pip install imutils==0.5.4
-COPY . .
+
 
 
 CMD echo "Build is successful"
