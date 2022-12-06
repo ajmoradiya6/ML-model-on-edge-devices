@@ -12,16 +12,15 @@
 
 ## :warning: TechStack/framework used
 
-- [OpenCV](https://opencv.org/)
-- [Caffe-based face detector](https://caffe.berkeleyvision.org/)
-- [Keras](https://keras.io/)
-- [TensorFlow](https://www.tensorflow.org/)
-- [MobileNetV2](https://arxiv.org/abs/1801.04381)
+- OpenCV
+- Caffe-based face detector
+- Keras
+- TensorFlow
+- MobileNetV2
 
 ## :star: Features
 Our face mask detector doesn't use any morphed masked images dataset and the model is accurate. Owing to the use of MobileNetV2 architecture, it is computationally efficient, thus making it easier to deploy the model to edge devices.
 
-This system can therefore be used in real-time applications which require face-mask detection for safety purposes due to the outbreak of Covid-19. This project can be integrated with embedded systems for application in airports, railway stations, offices, schools, and public places to ensure that public safety guidelines are followed.
 
 ## :file_folder: Dataset
 
@@ -39,15 +38,16 @@ All the dependencies and required libraries are included in the file requirement
 ## 🚀&nbsp; Installation
 1. Clone the repo
 ```
-$ git clone https://github.com/chandrikadeb7/Face-Mask-Detection.git
+$ git clone https://github.com/ajmoradiya6/ML-model-on-edge-devices
 ```
 
 2. Change your directory to the cloned repo 
 ```
-$ cd Face-Mask-Detection
+$ cd ML-model-on-edge-devices
 ```
 
-3. Create a Python virtual environment named 'test' and activate it
+3. Create a Python virtual environment named 'test' and activate it (Optional)
+- This is optional, if you want you can skip this step
 ```
 $ virtualenv test
 ```
@@ -57,44 +57,38 @@ $ source test/bin/activate
 
 4. Now, run the following command in your Terminal/Command Prompt to install the libraries required
 ```
-$ pip3 install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 ## :bulb: Working
 
 1. Open terminal. Go into the cloned project directory and type the following command:
 ```
-$ python3 train_mask_detector.py --dataset dataset
+$ python train_mask_detector.py --dataset dataset
 ```
 
 2. To detect face masks in an image type the following command: 
 ```
-$ python3 detect_mask_image.py --image images/pic1.jpeg
+$ python detect_mask_image.py --image images/pic1.jpeg
 ```
 
 3. To detect face masks in real-time video streams type the following command:
 ```
-$ python3 detect_mask_video.py 
+$ python detect_mask_video.py 
 ```
 ## :key: Results
 
 #### Our model gave 98% accuracy for Face Mask Detection after training via <code>tensorflow-gpu==2.5.0</code>
 
-<a href="https://colab.research.google.com/drive/1AZ0W2QAHnM3rcj0qbTmc7c3fAMPCowQ1?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
 ####          
-![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/Readme_images/Screenshot%202020-06-01%20at%209.48.27%20PM.png)
+![](https://github.com/ajmoradiya6/ML-model-on-edge-devices/blob/master/Readme_images/Screenshot%202020-06-01%20at%209.48.27%20PM.png)
 
 #### We got the following accuracy/loss training curve plot
-![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/plot.png)
+![](https://github.com/ajmoradiya6/ML-model-on-edge-devices/blob/master/plot.png)
 
-## Streamlit app
 
-Face Mask Detector webapp using Tensorflow & Streamlit
 
-command
-```
-$ streamlit run app.py 
-```
 ## Images
 
 <p align="center">
@@ -107,21 +101,4 @@ $ streamlit run app.py
 </p>
 <p align="center">Results</p>
 
-## :clap: And it's done!
-Feel free to mail me for any doubts/query 
-:email: chandrikadeb7@gmail.com
-
 ---
-
-## Internet of Things Device Setup
-
-### Expected Hardware
-* [Raspberry Pi 4 4GB with a case](https://www.canakit.com/raspberry-pi-4-4gb.html)
-* [5MP OV5647 PiCamera from Arducam](https://www.arducam.com/docs/cameras-for-raspberry-pi/native-raspberry-pi-cameras/5mp-ov5647-cameras/)
-
-### Getting Started
-* Setup the Raspberry Pi case and Operating System by following the Getting Started section on page 3 at `documentation/CanaKit-Raspberry-Pi-Quick-Start-Guide-4.0.pdf` or https://www.canakit.com/Media/CanaKit-Raspberry-Pi-Quick-Start-Guide-4.0.pdf
-  * With NOOBS, use the recommended operating system
-* Setup the PiCamera
-  * Assemble the PiCamera case from Arducam using `documentation/Arducam-Case-Setup.pdf` or https://www.arducam.com/docs/cameras-for-raspberry-pi/native-raspberry-pi-cameras/5mp-ov5647-cameras/
-  * [Attach your PiCamera module to the Raspberry Pi and enable the camera](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/2)
