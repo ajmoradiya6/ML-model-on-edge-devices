@@ -82,10 +82,10 @@ $ python detect_mask_video.py
 
 
 ####          
-![](https://github.com/ajmoradiya6/ML-model-on-edge-devices/blob/master/Readme_images/Screenshot%202020-06-01%20at%209.48.27%20PM.png)
+![](https://github.com/ajmoradiya6/ML-model-on-edge-devices/ML-model-on-edge-devices/Readme_images/Screenshot 2020-06-01 at 9.48.27 PM.PNG)
 
 #### We got the following accuracy/loss training curve plot
-![](https://github.com/ajmoradiya6/ML-model-on-edge-devices/blob/master/plot.png)
+![](https://github.com/ajmoradiya6/ML-model-on-edge-devices/plot.png)
 
 
 
