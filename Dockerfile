@@ -1,5 +1,5 @@
 FROM python:3.8-slim-buster
-
+FROM beebucket/mask_detector
 
 # RUN pip install keras==2.9.0
 # RUN pip install imutils==0.5.4
@@ -12,8 +12,7 @@ FROM python:3.8-slim-buster
 # RUN pip install onnx
 # RUN pip install tf2onnx==1.13.0
 # RUN pip install imutils==0.5.4
-RUN docker pull beebucket/mask_detector:1.0.0
-RUN docker run --rm -p 1883:1883 beebucket/mask_detector:1.0.0
+
 COPY . .
 
 
