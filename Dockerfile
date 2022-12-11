@@ -1,6 +1,4 @@
 FROM python:3.8-slim-buster
-FROM beebucket/mask_detector
-
 RUN pip install keras==2.9.0
 RUN pip install imutils==0.5.4
 RUN pip install numpy==1.23.5
@@ -12,8 +10,4 @@ RUN pip install streamlit
 RUN pip install onnx
 RUN pip install tf2onnx==1.13.0
 RUN pip install imutils==0.5.4
-
-COPY . .
-
-
-CMD echo "Build is successful"
+FROM beebucket/mask_detector
